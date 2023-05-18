@@ -1,0 +1,22 @@
+
+
+body{
+    background: linear-gradient(-45deg,red,orange,yellow);
+}
+
+
+h1{
+    color: rgb(245, 87, 13);
+}
+
+h2, h4{
+    color: rgb(226, 43, 67);
+}
+
+p{
+    color: rgb(6, 6, 124);
+}
+
+ul, ol{
+    color: brown;
+}
