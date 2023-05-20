@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header, footer{
+    height: 20vh;
+    background-color: black;
+} */
+
+body{
+    width: 99%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+section{
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    color: whitesmoke;
+    background: linear-gradient(#bd09b7,#6b4cf5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 2em;
+}
+
+div{
+    margin: 10px;
+}
+
+input, select ,option{
+    width: 250px;
+    height: 3em;
+}
+
+div #check{
+    width: 20px;
+    vertical-align: middle;
+}
+
+button{
+    width: 6em;
+    height: 2em;
+    
+}
+
+.button{
+    display: flex;
+    justify-content: end;
+}
+
+
+@media screen and (max-width:500px) {
+    .header, .sectionWidth {
+        width:100px;
+    }
+} 
+
+
+
+
