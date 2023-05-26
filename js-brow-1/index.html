@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayúsculas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Ejercicios javascript</h2>
+    <h3>Parte 1</h3>
+
+    <section>
+        
+        <div class="mayusculas">
+            <h3>Escribe un texto, aparecera en mayúscula en el siguiente campo</h3>
+            <textarea name="texto" id="texto" cols="30" rows="5"></textarea>
+            <textarea name="resultado" id="resultado" cols="30" rows="5" readonly></textarea>
+            
+    
+        </div>
+    </section>
+    <section>
+        <div class="Conversor">
+            <h3>Convertir a Mayúsculas al hacer click en el botón</h3>
+            <textarea name="texto1" id="texto1" cols="30" rows="5" placeholder="Digite un texto"></textarea>
+            <textarea name="resultado1" id="resultado1" cols="30" rows="5" readonly></textarea>
+        </div>
+        <button class="btn-1" onclick="upperCase()">Convertir a Mayúsculas</button>
+    </section>
+
+    <section>
+        <div class="palindromo">
+            <h3>Verficar si es Palíndromo</h3>
+            <textarea name="texto2" id="texto2" cols="30" rows="5" placeholder="Digite el texto que desea verificar ejemplo: Dabale arroz a la zorra el abad"></textarea>
+            <textarea name="resultado2" id="resultado2" cols="30" rows="5" readonly placeholder="Respuesta"></textarea>
+        </div>
+        <button class="btn-1" onclick="esPalindromo()">Es palíndromo?</button>
+    </section>
+   <script src="script.js"></script>
+</body>
+</html>

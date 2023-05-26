@@ -1,0 +1,116 @@
+Ejercicio 1:
+
+Crea una página HTML con un input de tipo texto y un párrafo vacío. Utiliza JavaScript para capturar el valor del input a medida que el usuario escribe y mostrarlo en el párrafo en mayúsculas.
+
+Pasos que puedes seguir para realizar el ejercicio:
+
+    Crea un archivo HTML con un input y un párrafo vacío:
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Mayúsculas</title>
+      </head>
+      <body>
+        <label for="texto">Escribe algo:</label>
+        <input type="text" id="texto">
+        <p id="resultado"></p>
+      </body>
+    </html>
+
+Agrega un script antes de que se cierre la etiqueta </body>
+
+<!DOCTYPE html>
+<html>
+  <body>
+    ...
+
+  <script>
+    // Your code here.
+  </script>
+
+  </body>
+</html>
+
+Dentro de este script debes seleccionar el input y el párrafo utilizando la función document.querySelector():
+
+const input = document.querySelector('#texto');
+const resultado = document.querySelector('#resultado');
+
+    Que otras alternativas para seleccionar el input y el párrafo existen?
+
+Agrega un evento de escucha para el evento input del input. Esto permitirá que el código se ejecute cada vez que el usuario escribe algo en el input:
+
+input.addEventListener('input', function() {
+  // Código para convertir el texto a mayúsculas y mostrarlo en el párrafo
+});
+
+Dentro del evento de escucha, captura el valor del input utilizando la propiedad value y conviértelo a mayúsculas utilizando el método toUpperCase():
+
+input.addEventListener('input', function() {
+  const texto = input.value.toUpperCase();
+  // Código para mostrar el texto en el párrafo
+});
+
+Actualiza el contenido del párrafo con el texto en mayúsculas utilizando la propiedad textContent:
+
+input.addEventListener('input', function() {
+  const texto = input.value.toUpperCase();
+  resultado.textContent = texto;
+});
+
+¡Listo! Ahora cuando el usuario escriba algo en el input, el texto se mostrará en mayúsculas en el párrafo.
+
+    Ahora vas a crear un boton en el html que sera usado solo para mostrar el texto en mayusculas siempre y cuando le demos click a este. <button class="btn">Convertir mensaje a mayusculas</button>
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Mayúsculas</title>
+      </head>
+      <body>
+        <label for="texto">Escribe algo:</label>
+        <input type="text" id="texto">
+        <button class="btn">Convertir mensaje a mayusculas</button>
+        <!-- aca va el resultado tal cual se escribe -->
+        <p id="resultado"></p>
+        <!-- aca va el resultado en mayusculas -->
+        <p id="resultadoMayusculas"></p>
+      </body>
+    </html>
+
+    Tu tarea es agregar un evento de escucha click al boton. Esto permitirá que el código se ejecute cada vez que el usuario haga click algo en este boton
+
+Ejercicio Bonus:
+
+Crea una página HTML con un input de tipo texto, un boton y un párrafo vacío. Utiliza JavaScript para capturar el valor del input y del boton, mostrarlo en el párrafo si la palabra escrita en el input es palindroma o no (es una palabra o frase que se lee igual en un sentido que en otro).
+
+Pasos que puedes seguir para realizar el ejercicio:
+
+    Crea un archivo HTML con un input y un párrafo vacío:
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Palindromo</title>
+      </head>
+      <body>
+        <label for="texto">Escribe algo:</label>
+        <input type="text" id="texto">
+        <button class="btn">Validar</button>
+        <p id="resultado"></p>
+      </body>
+    </html>
+
+    Realiza los pasos necesarios para resolver este ejercicio
+
+Poscondiciones:
+
+    Crea un commit con el mensaje “solucion a los ejercicios de js en el navegador” .
+    Integra la rama develop a la rama principal.
+    Hazle push al repositorio remoto.
+    Elimina la rama develop del repositorio local.
+    Compartir el link del repositorio en esta misión.
