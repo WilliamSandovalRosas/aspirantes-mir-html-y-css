@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listaDinamica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lista de tareas dinámica</h1>
+    </header>
+
+    <section>
+        <div class="add">
+            <input type="text" name="tarea" id="nvaTarea" placeholder="Nueva actividad">
+            <button class="button" id="agregar" onclick=agregar()>Add</button>
+        </div>
+
+        <h3>Lista de Actividades</h3>
+
+        <div class="table">
+            <table>
+               
+                <thead>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </thead>
+                <tbody id="lista">
+                    <!-- <tr>
+                        <td><input type="checkbox" class="checkbox"></td>
+                        <td>terminar lista el fin de semana</td>
+                        <td><button class="button" id="delete" >Delete</button></td>
+                    </tr> -->
+                   
+                </tbody>
+            </table>
+            
+        </div>
+        <button class="button" id="check-delete" onclick=borrarChequeados()>Delete all done</button>
+
+    </section>
+
+
+
+<script src="script.js"></script>
+    
+</body>
+</html>

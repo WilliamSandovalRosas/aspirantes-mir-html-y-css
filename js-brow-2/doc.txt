@@ -1,0 +1,28 @@
+//let button = crearBoton();
+/* 
+function validarCheckbox()
+{
+    
+  let checked = checkbox.checkValidity;
+  if(checked){
+    let id = onclick.target.parentNode.parentNode;
+  }
+  return id;
+} 
+ */
+ /* function crearBoton(){
+    let button = document.createElement("button");
+    button.className="button";
+    button.id="delete";
+    button.innerHTML="Delete";
+    
+    button.addEventListener("click",e=>{
+       
+    })
+    return button;
+
+} */
+
+/**
+ * //let lista = document.getElementsByTagName("td");
+ */
