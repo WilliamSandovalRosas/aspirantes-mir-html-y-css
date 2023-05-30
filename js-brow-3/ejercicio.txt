@@ -1,0 +1,87 @@
+S11 - Javascript en el Navegador III
+Due Jun 05, 2023
+
+    La idea de este ejercicio es que practiquen JavaScript en el navegador.
+
+Agenda
+
+Precondiciones:
+
+    En el mismo repositorio creado en la sesion anterior aspirantes-mir-javascript-browser crear una rama develop desde la rama main
+    Crear una carpeta llamada js-brow-3 dentro de la carpeta raiz del repositorio.
+    Luego de eso, realizar los siguientes ejercicios.
+
+Ejercicio 1:
+
+Aquí te dejo un ejercicio que podrías hacer para practicar el uso de localStorage y el manejo del DOM con JavaScript vanilla:
+
+    Crea una página HTML con un formulario que tenga un campo para ingresar un nombre y un botón para guardar el nombre.
+    Al hacer clic en el botón para guardar el nombre, captura el valor del campo de entrada y almacénalo en localStorage.
+    Crea una sección en la página que muestre el nombre guardado en localStorage. Si no hay ningún nombre guardado, muestra un mensaje indicando que no hay datos.
+    Agrega un botón en la sección que permita borrar el nombre guardado en localStorage.
+    Asegúrate de que el nombre guardado en localStorage se muestre automáticamente en la sección cuando la página se carga.
+
+Aquí tienes un ejemplo de cómo podrías estructurar el código:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Local Storage</title>
+  </head>
+  <body>
+    <form>
+      <label for="name">Ingresa tu nombre</label>
+      <input type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+      <button type="submit">Guardar</button>
+    </form>
+    <section></section>
+    <script >
+      // Obtener elementos del DOM
+      const form = document.querySelector('form');
+      const input = document.querySelector('input');
+      const section = document.querySelector('section');
+
+      // Manejar el evento de enviar el formulario
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+      });
+
+      // Función para mostrar el nombre guardado en localStorage
+      function showName() {
+
+      }
+
+      // Función para borrar el nombre guardado en localStorage
+      function deleteName() {
+
+      }
+
+      // Mostrar el nombre guardado al cargar la página
+      showName();
+    </script>
+  </body>
+</html>
+
+Espero que este ejercicio te sea útil para practicar el uso de localStorage y el manejo del DOM con JavaScript vanilla. ¡Buena suerte!
+Bonus:
+
+    Agrega otro input type email para registrar el correo electronico del usuario.
+
+    Cuando hagan submit del formulario guardar un objecto en el localstorage de la siguiente forma.
+
+    {
+      name: "Local Storage",
+      email: "aca iria un email"
+    }
+
+    Mostrar nombre y correo en la seccion.
+
+Poscondiciones:
+
+    Crea un commit con el mensaje “solucion a los ejercicios de js en el navegador” .
+    Integra la rama develop a la rama principal.
+    Hazle push al repositorio remoto.
+    Elimina la rama develop del repositorio local.
+    Compartir el link del repositorio en esta misión.
